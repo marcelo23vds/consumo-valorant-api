@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-image: url('./img/background1.png');
+    background-image: url('../img/background1.png');
     background-size: cover;
     background-position: center;
     font-family: 'Orbitron', sans-serif;

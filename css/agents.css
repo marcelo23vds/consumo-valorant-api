@@ -31,6 +31,13 @@ main {
     padding-top: 12rem;
 }
 
+#container-carrossel {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    align-items: center; 
+}
+
 .botao {
     display: flex;
     flex-direction: column;
@@ -56,10 +63,15 @@ main {
     font-size: 40px;
 }
 
-.botao .agente img {
-    width: 13rem;
-    height: 13rem;
+.botao img {
+    width: 12rem;
+    height: 12rem;
     display: block;
+    margin-bottom: 0;
+}
+
+.setas {
+    cursor: pointer;
 }
 
 @media (max-width: 1300px) {
@@ -73,7 +85,7 @@ main {
         height: 20rem;
     }
 
-    .botao .agente img {
+    .botao img {
         width: 7rem;
         height: 7rem;
     }
@@ -92,10 +104,11 @@ main {
     }
 
     .botao span {
+        visibility: hidden;
         padding-top: 0;
     }
 
-    .botao .agente img {
+    .botao img {
         width: 4rem;
         height: 4rem;
         padding-bottom: 0;

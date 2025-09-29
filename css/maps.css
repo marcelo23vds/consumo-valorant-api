@@ -97,6 +97,7 @@ main {
     }
 
     .botao span {
+        visibility: hidden;
         padding-top: 0;
     }
 

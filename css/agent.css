@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('../img/background3.png');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 2rem 7rem 0 2rem;
+}
+
+#home {
+    padding-left: 1rem;
+}
+
+#nome-agente {
+    padding-left: 40%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15rem;
+    height: 87%;
+}
+
+.container p {
+    color: white;
+    width: 30%;
+    font-size: 40px;
+    position: fixed;
+    margin-right: 40%;
+}
+
+.container img {
+    margin-left: 35%;
+}

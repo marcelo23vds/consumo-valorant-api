@@ -80,6 +80,10 @@ main {
         padding-left: 1rem;
     }
 
+    header h1 {
+        padding-left: 4.5rem;
+    }
+
     .botao {
         width: 15rem; 
         height: 20rem;
@@ -95,6 +99,10 @@ main {
     
     header {
         padding-left: 1rem;
+    }
+
+    header h1 {
+        padding-left: 4.5rem;
     }
 
     .botao {

@@ -41,4 +41,26 @@ header {
     padding-bottom: 1rem;
 }
 
+@media (max-width: 1300px) {
+    #nome-mapa {
+        padding-left: 30%;
+    }
+    .container {
+        margin-top: 5rem;
+    }
+    
+    #mapa-2d {
+        width: 55%;
+        padding-bottom: 5rem;
+    }
+}
 
+@media (max-width: 767px) {
+    #nome-mapa {
+        padding-left: 20%;
+    }
+    #mapa-2d {
+        width: 75%;
+    }
+    
+}

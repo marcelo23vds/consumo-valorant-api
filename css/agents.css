@@ -56,3 +56,35 @@ main {
     height: 13rem;
     display: block;
 }
+
+@media (max-width: 1300px) {
+    .botao {
+        width: 15rem; 
+        height: 20rem;
+    }
+
+    .botao .agente img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .botao {
+        width: 5rem; 
+        height: 7rem;
+        border-radius: 10px; 
+    }
+
+    .botao span {
+        padding-top: 0;
+    }
+
+    .botao .agente img {
+        width: 4rem;
+        height: 4rem;
+        padding-bottom: 0;
+    }
+
+}

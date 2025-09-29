@@ -67,7 +67,7 @@ footer {
     main {
         display: flex;
         flex-direction: column;
-        padding-top: 6rem;
+        padding-top: 16rem;
     }
 
     .botao {
@@ -89,5 +89,11 @@ footer {
 
     #botao-mapa {
         margin-right: 0;
+    }
+}
+
+@media (max-width: 768px){
+    main {
+        padding-top: 6rem;
     }
 }

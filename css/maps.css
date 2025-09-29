@@ -32,7 +32,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     border-radius: 20px;  
     text-decoration: none; 
     font-size: 1.8rem;
@@ -54,4 +53,50 @@ main {
     width: 25rem;
     height: 30rem;
     display: block;
+}
+
+@media (max-width: 1300px) {
+    .botao {
+        width: 15rem; 
+        height: 20rem;
+        padding-top: 3rem;
+    }
+
+    .botao .mapa img {
+        width: 10rem;
+        height: 12rem;
+    }
+
+    .botao span {
+        position: fixed;
+        padding-top: 9rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .botao {
+        width: 5rem; 
+        height: 7rem;
+        border-radius: 10px; 
+        padding-top: 1rem;
+    }
+
+    .botao span {
+        padding-top: 0;
+    }
+
+    .botao .mapa img {
+        width: 4rem;
+        height: 4rem;
+        padding-bottom: 0;
+    }
+
+    .botao span {
+        position: fixed;
+        padding-top: 4rem;
+        font-size: 1rem;
+    }
+
 }

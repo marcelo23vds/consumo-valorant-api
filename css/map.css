@@ -16,7 +16,11 @@ header {
     display: flex;
     align-items: center;
     color: white;
-    padding: 2rem 7rem 0 2rem;
+    padding: 2rem 7rem 2rem 4rem;
+}
+
+header a img {
+    width: 2rem;
 }
 
 #home {
@@ -42,9 +46,11 @@ header {
 }
 
 @media (max-width: 1300px) {
-    #nome-mapa {
-        padding-left: 30%;
+
+    header {
+        padding-left: 1rem;
     }
+    
     .container {
         margin-top: 5rem;
     }
@@ -56,6 +62,11 @@ header {
 }
 
 @media (max-width: 767px) {
+
+    header {
+        padding-left: 1rem;
+    }
+
     #nome-mapa {
         padding-left: 20%;
     }

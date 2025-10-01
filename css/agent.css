@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-image: url('../img/background3.png');
+    background-image: url('../img/background2.png');
     background-size: cover;
     background-position: center;
     font-family: 'Orbitron', sans-serif;
@@ -28,7 +28,7 @@ header a img {
 }
 
 #nome-agente {
-    padding-left: 40%;
+    padding-left: 42%;
 }
 
 .container {
@@ -49,6 +49,8 @@ header a img {
 
 .container img {
     margin-left: 35%;
+    width: 65%;
+    display: block;
 }
 
 @media (max-width: 1300px){

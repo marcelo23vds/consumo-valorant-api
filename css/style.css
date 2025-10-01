@@ -15,7 +15,8 @@ body {
 main {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
     padding-top: 18rem;
 }
 
@@ -26,12 +27,12 @@ main {
     justify-content: center;
     width: 17rem; 
     height: 17rem;
-    background: linear-gradient(180deg, #4c0a56, #FFFFFF); 
+    background: linear-gradient(180deg, #BD3944, #000000); 
     border-radius: 20px;  
     text-decoration: none; 
     font-size: 1.8rem;
     color: white;
-    opacity: 70%;
+    opacity: 50%;
     transition: 0.2s;
 }
 

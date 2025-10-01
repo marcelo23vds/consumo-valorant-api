@@ -17,7 +17,7 @@ let posicaoAtual = 0
 //3 cards por vez
 const cardsPorPagina = 3
 
-function criarCards() {
+const criarCards = () => {
 
   // importante para não aparecer na tela com agentes da pagina anterior
   carrossel.innerHTML = ''
@@ -27,17 +27,20 @@ function criarCards() {
 
   // para cada item/agente, cria um elemento <a class="botao">
   grupo.forEach(item => {
+
     const card = document.createElement('a')
     card.className = 'botao'
-    card.href = '#'
+    //ao clicar no card do agente, é chamado o arquivo html acompanhado do parametro uuid do agente clicado
+    //query
+    card.href = `agent.html?id=${item.uuid}`
 
     //nome do agente
-    const nome = document.createElement('span');
-    nome.textContent = item.displayName;
+    const nome = document.createElement('span')
+    nome.textContent = item.displayName
 
     //div da foto
-    const containerFoto = document.createElement('div');
-    containerFoto.classList.add('item');
+    const containerFoto = document.createElement('div')
+    containerFoto.classList.add('item')
 
     //foto do agente
     const foto = document.createElement('img')
@@ -50,10 +53,10 @@ function criarCards() {
 
     // adiciona o card ao carrossel
     carrossel.appendChild(card)
-  });
+  })
 }
 
-async function buscarAgentes() {
+const buscarAgentes = async () => {
 
   // requisição da api
   const res = await fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true")

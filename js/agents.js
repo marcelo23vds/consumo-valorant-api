@@ -45,7 +45,6 @@ const criarCards = () => {
     //foto do agente
     const foto = document.createElement('img')
     foto.src = item.displayIcon
-    foto.alt = item.displayName
 
     containerFoto.appendChild(foto)
     card.appendChild(nome)
@@ -59,13 +58,14 @@ const criarCards = () => {
 const buscarAgentes = async () => {
 
   // requisição da api
-  const res = await fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true")
-  const agente = await res.json()
+  // utilizando isPlayableCharacter=true porque na documentação da API foi recomendado
+  const response = await fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true")
+  const dados = await response.json()
 
   //data é o atributo do json da api que retorna todos os dados
-  agentes = agente.data
+  agentes = dados.data
 
-  // Inicializa a renderização (começa em posicaoAtual = 0)
+  //inicia a renderização (começa em posicaoAtual = 0)
   posicaoAtual = 0
   criarCards()
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/map.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="./js/map.js" defer></script>
     <title>VALORANT API</title>
 </head>
 <body>
@@ -15,11 +16,11 @@
         <a href="./index.html" id="home">
             <img src="./img/icone-home.svg" alt="botao-home">
         </a>
-        <h1 id="nome-mapa">Icebox</h1>
+        <h1 id="nome-mapa"></h1>
     </header>
     <main class="container">
-        <img class="item-container" id="mapa-2d" src="./img/testemapa.png">
-        <span class="item-container" id="coordenadas">76°44' A\"N 149°30' Z\"E</span>
+        <img id="foto-2d">
+        <img id="foto-panoramica">
     </main>
 </body>
 </html>

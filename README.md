@@ -1,4 +1,4 @@
-# Página do Valorant - consumindo API
+# Valorant - consumindo API
 
 ![](./img/preview.png)
 

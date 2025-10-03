@@ -59,8 +59,10 @@ const buscarMapas = async () => {
   const response = await fetch("https://valorant-api.com/v1/maps")
   const dados = await response.json()
 
-  //data é o atributo do json da api que retorna todos os dados
-  mapas = dados.data
+  //data é o atributo do json da api que retorna todos os dados. 
+  //utilizei o FILTER para pegar apenas os mapas principais, 
+  //ou seja, que possuam o atributo tacticalDescription diferente de vazio
+  mapas = dados.data.filter(mapa => mapa.tacticalDescription !== null)
 
   //inicia a renderização (começa em posicaoAtual = 0)
   posicaoAtual = 0

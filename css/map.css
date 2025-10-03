@@ -6,7 +6,7 @@
 
 body {
     height: 100vh;
-    background-image: url('../img/teste3.png');
+    background-image: url('../img/background2.png');
     background-size: cover;
     background-position: center;
     font-family: 'Orbitron', sans-serif;
@@ -28,19 +28,23 @@ header a img {
 }
 
 #nome-mapa {
-    padding-left: 40%;
+    padding-left: 42%;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    color: white;
-    font-weight: bold;
+    justify-content: center;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
 #mapa-2d {
+    width: 35%;
+    padding-bottom: 1rem;
+}
+
+#foto-mapa {
     width: 35%;
     padding-bottom: 1rem;
 }

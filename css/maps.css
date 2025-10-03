@@ -70,58 +70,84 @@ main {
     cursor: pointer;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
 
     header {
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
 
-    .botao {
-        width: 15rem; 
-        height: 20rem;
-        padding-top: 3rem;
+    header h1 {
+        padding-left: 4.5rem;
     }
 
-    .botao .mapa img {
-        width: 10rem;
-        height: 12rem;
+    main {
+        padding-top: 11rem;
     }
 
     .botao span {
-        position: fixed;
-        padding-top: 9rem;
-        font-size: 2rem;
+        padding-top: 17rem;
+    }
+
+    .botao img {
+        width: 15rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    header {
+        padding-left: 2rem;
+    }
+
+    header h1 {
+        padding-left: 3rem;
+    }
+
+    main {
+        padding-top: 2rem;
+    }
+
+    #container-carrossel {
+        flex-direction: column;
+    }
+
+    .botao span {
+        padding-top: 17rem;
+    }
+
+    .botao img {
+        width: 15rem;
+        height: 20rem;
     }
 }
 
 @media (max-width: 767px) {
 
     header {
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
 
-    .botao {
-        width: 5rem; 
-        height: 7rem;
-        border-radius: 10px; 
+    header h1 {
+        padding-left: 3rem;
+    }
+
+    main {
         padding-top: 1rem;
     }
 
-    .botao span {
-        visibility: hidden;
-        padding-top: 0;
-    }
-
-    .botao .mapa img {
-        width: 4rem;
-        height: 4rem;
-        padding-bottom: 0;
+    #container-carrossel {
+        flex-direction: column;
     }
 
     .botao span {
-        position: fixed;
-        padding-top: 4rem;
-        font-size: 1rem;
+        padding-top: 8rem;
+        font-size: 20px;
+    }
+
+    .botao img {
+        width: 9rem;
+        height: 10rem;
     }
 
 }

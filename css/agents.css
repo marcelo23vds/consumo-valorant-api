@@ -74,10 +74,10 @@ main {
     cursor: pointer;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
 
     header {
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
 
     header h1 {
@@ -85,7 +85,36 @@ main {
     }
 
     main {
-        padding-top: 7rem;
+        padding-top: 11rem;
+    }
+
+    .botao {
+        width: 15rem; 
+        height: 18rem;
+    }
+
+    .botao span {
+        padding-top: 3rem;
+    }
+
+    .botao img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    header {
+        padding-left: 2rem;
+    }
+
+    header h1 {
+        padding-left: 3rem;
+    }
+
+    main {
+        padding-top: 4rem;
     }
 
     #container-carrossel {

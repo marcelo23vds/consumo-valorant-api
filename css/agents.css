@@ -124,6 +124,7 @@ main {
     .botao {
         width: 15rem; 
         height: 15rem;
+        opacity: 100%;
     }
 
     .botao span {
@@ -138,6 +139,10 @@ main {
 
 @media (max-width: 767px) {
     
+    header h1 {
+        font-size: 20px;
+    }
+
     main {
         padding-top: 2rem;
     }

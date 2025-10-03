@@ -108,6 +108,10 @@ main {
         padding-top: 2rem;
     }
 
+    .botao {
+        opacity: 100%;
+    }
+
     #container-carrossel {
         flex-direction: column;
     }
@@ -130,6 +134,7 @@ main {
 
     header h1 {
         padding-left: 3rem;
+        font-size: 20px;
     }
 
     main {

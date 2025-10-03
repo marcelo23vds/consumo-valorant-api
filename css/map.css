@@ -49,33 +49,51 @@ header a img {
     padding-bottom: 1rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px){
 
     header {
-        padding-left: 1rem;
+        padding-left: 2rem;
+    }
+
+    .container {
+        padding-top: 4rem;
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    header h1 {
+        padding-left: 3rem;
     }
     
     .container {
-        margin-top: 5rem;
+        flex-direction: column;
+        padding-top: 0;
     }
-    
+
     #mapa-2d {
-        width: 55%;
-        padding-bottom: 5rem;
+        width: 70%;
+        padding-bottom: 1rem;
+    }
+
+    #foto-mapa {
+        width: 80%;
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .container p {
+        font-size: 17px;
+        width: 70%;
+        padding-left: 3rem;
     }
 }
 
-@media (max-width: 767px) {
-
-    header {
-        padding-left: 1rem;
-    }
-
-    #nome-mapa {
-        padding-left: 20%;
-    }
-    #mapa-2d {
-        width: 75%;
-    }
-    
-}

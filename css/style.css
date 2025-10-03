@@ -74,7 +74,7 @@ footer {
     .botao {
         width: 13rem; 
         height: 13rem;
-        opacity: 80%;
+        opacity: 100%;
     }
 
     .botao .icone img {
@@ -85,7 +85,6 @@ footer {
 
     #botao-agente {
         margin-left: 0;
-        margin-bottom: 2rem;
     }
 
     #botao-mapa {

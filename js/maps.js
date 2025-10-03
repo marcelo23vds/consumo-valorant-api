@@ -30,7 +30,7 @@ const criarCards = () => {
     const card = document.createElement('a')
     card.className = 'botao'
     //ao clicar no card do mapa, é chamado o arquivo html acompanhado do parametro uuid do mapa clicado
-    card.href = `map.html?id=${item.uuid}`
+    card.href = `map-details.html?id=${item.uuid}`
 
     //nome do mapa
     const nome = document.createElement('span')

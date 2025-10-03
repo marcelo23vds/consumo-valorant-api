@@ -32,7 +32,7 @@ const criarCards = () => {
     card.className = 'botao'
     //ao clicar no card do agente, é chamado o arquivo html acompanhado do parametro uuid do agente clicado
     //query
-    card.href = `agent.html?id=${item.uuid}`
+    card.href = `agent-details.html?id=${item.uuid}`
 
     //nome do agente
     const nome = document.createElement('span')

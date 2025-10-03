@@ -84,9 +84,21 @@ main {
         padding-left: 4.5rem;
     }
 
+    main {
+        padding-top: 7rem;
+    }
+
+    #container-carrossel {
+        flex-direction: column;
+    }
+
     .botao {
         width: 15rem; 
-        height: 20rem;
+        height: 15rem;
+    }
+
+    .botao span {
+        padding-top: 3rem;
     }
 
     .botao img {
@@ -97,29 +109,23 @@ main {
 
 @media (max-width: 767px) {
     
-    header {
-        padding-left: 1rem;
-    }
-
-    header h1 {
-        padding-left: 4.5rem;
+    main {
+        padding-top: 2rem;
     }
 
     .botao {
-        width: 5rem; 
-        height: 7rem;
-        border-radius: 10px; 
+        width: 8rem; 
+        height: 8rem;
     }
 
     .botao span {
-        visibility: hidden;
-        padding-top: 0;
+        padding-top: 1.5rem;
+        font-size: 20px;
     }
 
     .botao img {
         width: 4rem;
         height: 4rem;
-        padding-bottom: 0;
     }
 
 }

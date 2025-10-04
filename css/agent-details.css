@@ -85,13 +85,12 @@ header a img {
     }
 
     .container p {
-        font-size: 30px;
         width: 60%;
         padding-left: 5rem;
     }
 
     .container img {
-        height: 65%;
+        height: 45%;
         width: 65%;
     }
 }
@@ -103,13 +102,8 @@ header a img {
     }
 
     .container p {
-        font-size: 17px;
+        font-size: 14px;
         width: 70%;
         padding-left: 3rem;
-    }
-
-    .container img {
-        height: 70%;
-        width: 100%;
     }
 }

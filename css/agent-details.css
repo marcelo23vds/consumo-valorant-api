@@ -93,6 +93,7 @@ header a img {
     .container img {
         height: 45%;
         width: 65%;
+        display: block;
     }
 }
 

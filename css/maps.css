@@ -86,11 +86,13 @@ main {
 
     .botao span {
         padding-top: 17rem;
+        display: block;
     }
 
     .botao img {
         width: 15rem;
         height: 20rem;
+        display: block;
     }
 }
 

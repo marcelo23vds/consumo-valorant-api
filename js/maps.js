@@ -56,7 +56,7 @@ const criarCards = () => {
 const buscarMapas = async () => {
 
   // requisição da api
-  const response = await fetch("https://valorant-api.com/v1/maps")
+  const response = await fetch("https://servidor-ponte-valorant.onrender.com/maps")
   const dados = await response.json()
 
   //data é o atributo do json da api que retorna todos os dados. 

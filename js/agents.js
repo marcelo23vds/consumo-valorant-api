@@ -59,7 +59,7 @@ const buscarAgentes = async () => {
 
   // requisição da api
   // utilizando isPlayableCharacter=true porque na documentação da API foi recomendado
-  const response = await fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true")
+  const response = await fetch("https://servidor-ponte-valorant.onrender.com/agents?isPlayableCharacter=true")
   const dados = await response.json()
 
   //data é o atributo do json da api que retorna todos os dados
@@ -72,9 +72,7 @@ const buscarAgentes = async () => {
 
 buscarAgentes()
 
-
 //botoes de "navegação"
-
 botaoProximo.addEventListener("click", () => {
   if (posicaoAtual + cardsPorPagina < agentes.length) {
     posicaoAtual += cardsPorPagina

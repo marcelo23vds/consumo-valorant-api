@@ -16,7 +16,7 @@ let mapaId = parametro.get("id")
 
 const carregarMapa = async () => {
 
-    const response = await fetch(`https://valorant-api.com/v1/maps/${mapaId}`)
+    const response = await fetch(`https://servidor-ponte-valorant.onrender.com/maps/${mapaId}`)
     const dados = await response.json()
     const mapa = dados.data
 

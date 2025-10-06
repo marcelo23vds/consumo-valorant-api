@@ -16,7 +16,7 @@ let agenteId = parametro.get("id")
 
 const carregarAgente = async () => {
 
-    const response = await fetch(`https://valorant-api.com/v1/agents/${agenteId}`)
+    const response = await fetch(`https://servidor-ponte-valorant.onrender.com/agents/${agenteId}`)
     const dados = await response.json()
     const agente = dados.data
 

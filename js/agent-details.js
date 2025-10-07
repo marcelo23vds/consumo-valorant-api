@@ -16,7 +16,9 @@ let agenteId = parametro.get("id")
 
 const carregarAgente = async () => {
 
-    const response = await fetch(`https://servidor-ponte-valorant.onrender.com/agents/${agenteId}`)
+    // o SENAI bloqueia o site da API do Valorant, então utilizar o prefixo -> https://corsproxy.io/?url=
+    //                                                                  ou  -> https://api.allorigins.win/raw?url=
+    const response = await fetch(`https://valorant-api.com/v1/agents/${agenteId}`)
     const dados = await response.json()
     const agente = dados.data
 

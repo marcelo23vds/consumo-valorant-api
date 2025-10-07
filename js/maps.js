@@ -56,7 +56,9 @@ const criarCards = () => {
 const buscarMapas = async () => {
 
   // requisição da api
-  const response = await fetch("https://servidor-ponte-valorant.onrender.com/maps")
+  // o SENAI bloqueia o site da API do Valorant, então utilizar o prefixo -> https://corsproxy.io/?url=
+  //                                                                  ou  -> https://api.allorigins.win/raw?url=
+  const response = await fetch("https://valorant-api.com/v1/maps/")
   const dados = await response.json()
 
   //data é o atributo do json da api que retorna todos os dados. 

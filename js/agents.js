@@ -59,7 +59,9 @@ const buscarAgentes = async () => {
 
   // requisição da api
   // utilizando isPlayableCharacter=true porque na documentação da API foi recomendado
-  const response = await fetch("https://servidor-ponte-valorant.onrender.com/agents?isPlayableCharacter=true")
+  // o SENAI bloqueia o site da API do Valorant, então utilizar o prefixo -> https://corsproxy.io/?url=
+  //                                                                  ou  -> https://api.allorigins.win/raw?url=
+  const response = await fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true")
   const dados = await response.json()
 
   //data é o atributo do json da api que retorna todos os dados

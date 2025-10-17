@@ -16,16 +16,14 @@ let agenteId = parametro.get("id")
 
 const carregarAgente = async () => {
 
-    // o SENAI bloqueia o site da API do Valorant, então utilizar o prefixo -> https://corsproxy.io/?url=
-    //                                                                  ou  -> https://api.allorigins.win/raw?url=
-    const response = await fetch(`https://valorant-api.com/v1/agents/${agenteId}`)
+    const response = await fetch(`https://corsproxy.io/?url=https://valorant-api.com/v1/agents/${agenteId}`)
     const dados = await response.json()
     const agente = dados.data
 
     //adicionando o nome do agente
     document.getElementById("nome-agente").textContent = agente.displayName
     //adicionando a foto grande do agente
-    document.getElementById("foto").src = agente.fullPortrait
+    document.getElementById("foto").src = `https://corsproxy.io/?url=${agente.fullPortrait}`
     //adicionando a descrição do agente
     document.getElementById("descricao").textContent = agente.description
 }

@@ -42,7 +42,7 @@ const criarCards = () => {
 
     //foto do mapa
     const foto = document.createElement('img')
-    foto.src = item.listViewIconTall
+    foto.src = `https://corsproxy.io/?url=${item.listViewIconTall}`
 
     containerFoto.appendChild(foto)
     card.appendChild(nome)
@@ -56,9 +56,7 @@ const criarCards = () => {
 const buscarMapas = async () => {
 
   // requisição da api
-  // o SENAI bloqueia o site da API do Valorant, então utilizar o prefixo -> https://corsproxy.io/?url=
-  //                                                                  ou  -> https://api.allorigins.win/raw?url=
-  const response = await fetch("https://valorant-api.com/v1/maps/")
+  const response = await fetch("https://corsproxy.io/?url=https://valorant-api.com/v1/maps/")
   const dados = await response.json()
 
   //data é o atributo do json da api que retorna todos os dados. 

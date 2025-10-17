@@ -16,18 +16,16 @@ let mapaId = parametro.get("id")
 
 const carregarMapa = async () => {
 
-    // o SENAI bloqueia o site da API do Valorant, então utilizar o prefixo -> https://corsproxy.io/?url=
-    //                                                                  ou  -> https://api.allorigins.win/raw?url=
-    const response = await fetch(`https://valorant-api.com/v1/maps/${mapaId}`)
+    const response = await fetch(`https://corsproxy.io/?url=https://valorant-api.com/v1/maps/${mapaId}`)
     const dados = await response.json()
     const mapa = dados.data
 
     //adicionando o nome do mapa
     document.getElementById("nome-mapa").textContent = mapa.displayName
     //adicionando a foto 2d do mapa
-    document.getElementById("mapa-2d").src = mapa.displayIcon
+    document.getElementById("mapa-2d").src = `https://corsproxy.io/?url=${mapa.displayIcon}`
     //adicionando a foto grande do mapa
-    document.getElementById("foto-mapa").src = mapa.splash
+    document.getElementById("foto-mapa").src = `https://corsproxy.io/?url=${mapa.splash}`
 }
 
 carregarMapa()
